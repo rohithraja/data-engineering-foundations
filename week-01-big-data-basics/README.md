@@ -86,4 +86,18 @@ YARN: Yet another resource negotiator used for negotiating or managing resources
  and spark can be written in Java, Scala and Python 
 we learn pyspark here in here as python is flexible for writing spark application
  
- 
+# Database Vs Datawarehouse Vs DataLake
+A database holds transactional data which is the latest data like day to day data ..it is a Online Transactional Processing System (OLTP)
+A database enforces schema on write whinch means schema is defined even before data is loaded into the table or database 
+if schema mismatches then insert statement errors out even before data is loaded this is schema on write 
+
+A datawarehouse is used for analytical processing of historical data and derive insights 
+we need to run complex queries in-order to analyse data thats why we cannot run analytical queries on the database as its slows down the day to day 
+writes...datawarehouse follows ETL Process extract data from multiple sources and transform it before we load it into datawarehouse 
+transform is a comolex process before we load the data 
+datawarehouses also enforces scheme on write 
+
+a datalake is something which is used to draw insights from huge amount of data ...in datalake the data is raw we enforce sxhema when we read the data 
+so datalake enforces schema on read just like hive tables where data is prresent in some location and schema is in other location we enforces schema 
+while we read the data datalake follows ELT process like first all rawdata is loaded into datalake like HDFS , AWS S3 etc and then we read the data by 
+enforcing a schema 
