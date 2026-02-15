@@ -25,3 +25,29 @@ but what about processing and performance ???
 
 this is where distributed system which has distributed storage and distributed processing and this combination which brings horizontal 
 scalability perfectly suits big data systems
+
+# Hadoop Overview
+Hadoop is the distributed framework or eco system for solving big data problems
+Hadoop has 3 major components 
+HDFS: Hadoop distributed file system (distirbuted storage)
+Map Reduce: its a distributed processing framework in hadoop and is java native
+YARN: Yet another resource negotiator used for negotiating or managing resources 
+ around these 3 core components there are other tools or servivces like 
+ sqoop : which is the tool used for ingestion from external sources to HDFS using sqoop import and vice versa using sqoop export
+ pig : pig is a scripting language used to clean the data 
+ hive : hive is a SQL kind of interface to query data 
+ all these tools would use map reduce jobs under neath the herd 
+ OOZIE : its XML based workflow schedulder in hadoop
+ Hbase : its NoSQL database service in Hadoop eco system 
+ ex: lets say we had 10 lakh records in a emp table and we want to filter id 800000 then when you run query using hive 
+ select * from emp where id = 800000 it goes based on sequential search and it takes lot of time 
+ but hbase query goes in random search and retrieval is faster ....so in banks or retail industry if they wanted to retrieve particular customer info 
+ then they can use NoSQL databases
+
+ now people are moving away from hadoop eco system tools which is a on-premise distributed framework to solve big data problems into cloud based 
+ like azure Cosmos DB instead of hbase 
+ Azure data factory instead of Oozie 
+ azure data factory is used instead of sqoop for data movement and also data integration using GUI based pipelines 
+ Hive is still used by many companies still 
+ instead of map reduce spark is used because map reduce is java native and is very slow  
+ 
