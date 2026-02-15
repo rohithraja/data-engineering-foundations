@@ -74,5 +74,16 @@ YARN: Yet another resource negotiator used for negotiating or managing resources
  hybrid cloud : its like combination of public plus private where they gona secure their senstive data within private cloud and gona use public cloud for general   purpose
 
  public clouds examples: Amazon AWS Microsoft Azure   Google GCP 
+
+ # Spark at highlevel
+ Hadoop has 3 core components HDFS, Map Reduce and YARN 
+ but Map reduce has dead now it has been replaced by spark this is because of Map reduce hardness of coding and it slowness
+ spark is 10X - 100X times faster compared to Map reduce
+
+ spark is general purpose in-memory compute engine which needs 2 components storage and resource manager to plug and play 
+ Storage : HDFS/ AWS S3/ AZURE ADLS GEN2 / GCS / Local Storage
+ Resource Manager: YARN/ MESOS/ Kubernetes
+ and spark can be written in Java, Scala and Python 
+we learn pyspark here in here as python is flexible for writing spark application
  
  
