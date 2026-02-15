@@ -50,4 +50,27 @@ YARN: Yet another resource negotiator used for negotiating or managing resources
  azure data factory is used instead of sqoop for data movement and also data integration using GUI based pipelines 
  Hive is still used by many companies still 
  instead of map reduce spark is used because map reduce is java native and is very slow  
+
+ # Cloud and its advantages
+ in the On-premise i.e at our location if you want to run a 50 node hadoop cluster we need to buy the servers procure space for it install software recruit admins 
+ and also we need to pay upfront cost for it whether you use it or not so this takes months 
+ its like if you want to set-up a start-up company then if you construct your own office and set up all the infrastructure yourselves its quite expensive and time  bound  but what if there are some realters who build commercial spaces for rent and you just plug and play per seat then you get out write advantage that you can 
+ start your start-up immediately this is cloud 
+ and advantages of cloud 
+ scalability : for example if amazon wanted to run some sales then they need to handle extra traffic from lot of customers now using cloud they can spin up their 
+ resources just by using the click 
+ capex Vs opex cost : when in on-premise  along with operational cost you need to take care of  capital expenditure (upfront cost) but with cloud you need to just  worry about operational expenditure
+ Agility: using cloud within 10 minutes you can spin up 10 machines or as many machines but with on-premises it takes months
+ Geo distribution : if you wanted to dont have latency to access your website which is being hosted in the different country where your cusotmers are accesing your site from then you can easily spin up one more server in that country where the request from the cusotmer hits the nearest server
+ Disaster Recovery: if your website is being hosted in multiple servers then even if one location is prone to disaster then other server would automatically receives the cusotmers request but with some latency without interupting your business 
+ cost effective: as you would pay only for what you use its cost effective compare to on-premise 
+
+ what are the different types of clouds :
+ public cloud : they not only use their resources but also would rent and most of the people would rent them because of their brand value like 
+ Amazon AWS Microsoft Azure Google GCP 
+ private cloud : this is costly but used by those financial forms like JP morgan or cisco use their own inhouse cloud and its meant only for them
+ hybrid cloud : its like combination of public plus private where they gona secure their senstive data within private cloud and gona use public cloud for general   purpose
+
+ public clouds examples: Amazon AWS Microsoft Azure   Google GCP 
+ 
  
