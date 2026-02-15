@@ -100,4 +100,36 @@ Ex: Teradata
 a datalake is something which is used to draw insights from huge amount of data ...in datalake the data is raw we enforce sxhema when we read the data 
 so datalake enforces schema on read just like hive tables where data is prresent in some location and schema is in other location we enforces schema 
 while we read the data datalake follows ELT process like first all rawdata is loaded into datalake like HDFS , AWS S3 etc and then we read the data by 
-enforcing a schema. datalake can store structured or unstructured data
+enforcing a schema. datalake can store structured or unstructured data 
+
+# Data Engineering workflow 
+Source --> Ingestion --> storage or datalake ---> processing ---> serving layer
+from different multiple sources say RDBMS or Web applications or Mobile apps or files etc the data is first ingested into data lake or storage layer and then 
+the data from data lake is processed nothing but data quality checks , aggregations , transformations , business logics is applied and is moved to serving layer 
+where database / datawarehouse would be serving layer if it is for reporting ...if it is for building custom UI then we use NoSQL Database
+
+if it is on-premise .i.e Hadoop then 
+MySQL ---> Sqoop ---> HDFS ----> Map Reduce/Spark ---> Hive/Hbase
+
+if it is Azure Cloud then 
+Multiple Sources ----> Azure data Factory (ADF) -----> ADLS Gen 2 -----> Azure Databricks / Azure Synapse ----> Azure SQL / cosmos DB 
+if it is AWS Cloud then 
+Multiple Sources ----> AWS glue ----> AWS S3 ----> AWS Databricks/ Athena / Redshift -----> AWS RDS/ Dynamo DB 
+
+basically computation is of 2 types serverless computation Vs serverful or managed computation 
+athena is an serverless SQL quering service which uses resources from shared pool no dedicated clusters or resources 
+where as redshift is managed datawarehouse service which uses dedicated redshift cluster or servers and queries are run inside it 
+we use athena when we need to run adhoc queires on high level and we use redshift where we need to run analytical queries 
+
+when it comes to azure we have azure synapse serverless Vs azure synapse dedicated pool 
+
+In azure we have 
+azure data factory for ingestion 
+ADLS Gen2 for data lake
+azure databricks for processing 
+azure synapse for processing 
+cosmos db for serving 
+azure SQL for serving 
+azure data factory for orchestration and scheduling of workflows 
+
+
