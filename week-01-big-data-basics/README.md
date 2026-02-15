@@ -61,8 +61,10 @@ YARN: Yet another resource negotiator used for negotiating or managing resources
  resources just by using the click 
  capex Vs opex cost : when in on-premise  along with operational cost you need to take care of  capital expenditure (upfront cost) but with cloud you need to just  worry about operational expenditure
  Agility: using cloud within 10 minutes you can spin up 10 machines or as many machines but with on-premises it takes months
- Geo distribution : if you wanted to dont have latency to access your website which is being hosted in the different country where your cusotmers are accesing your site from then you can easily spin up one more server in that country where the request from the cusotmer hits the nearest server
- Disaster Recovery: if your website is being hosted in multiple servers then even if one location is prone to disaster then other server would automatically receives the cusotmers request but with some latency without interupting your business 
+ Geo distribution : lets say the server which is hosting your website is in India and 30% of your customers are from US then they face latency in accessing the 
+ website. in-order to address the issue if your website is hosted in two different servers each one placed in India and US then there will be no network issue 
+ or latency issue
+ Disaster Recovery: if your website is being hosted in multiple servers in different locations then even if one location is prone to disaster then other server would automatically receives the cusotmers request but with some latency without interupting your business 
  cost effective: as you would pay only for what you use its cost effective compare to on-premise 
 
  what are the different types of clouds :
