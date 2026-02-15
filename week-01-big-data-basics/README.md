@@ -120,7 +120,8 @@ basically computation is of 2 types serverless computation Vs serverful or manag
 athena is an serverless SQL quering service which uses resources from shared pool no dedicated clusters or resources 
 where as redshift is managed datawarehouse service which uses dedicated redshift cluster or servers and queries are run inside it 
 we use athena when we need to run adhoc queires on high level and we use redshift where we need to run analytical queries 
-
+athena charges based on the data scanned by the query for 1 TB $5 is charged for 100 gb it is $0.5 but for redshift it is charged 
+based on nodes per hour 
 when it comes to azure we have azure synapse serverless Vs azure synapse dedicated pool 
 
 In azure we have 
