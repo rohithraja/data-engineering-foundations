@@ -11,7 +11,7 @@ Value: are we able to generate value out of this huge data (because the purpose 
 business decisions better based on the insights drawn out of it )
 
 now traditional monolithic systems or monolithic tech stock cannot handle big data we need new tech stock which is distributed system
-
+a distributed system is the cluster of machines or nodes which are connected over a network and they have their own resources for distributed processing 
 basically a monolithic system is one powerful machine which has resources 
 compute: 4 CPU cores
 memory: 8 GB ram
