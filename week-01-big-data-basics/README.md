@@ -133,4 +133,16 @@ cosmos db for serving
 azure SQL for serving 
 azure data factory for orchestration and scheduling of workflows 
 
+# HDFS architecture
+a 500 mb file will be stored in hdfs interms of blocks and let us consider it is a 4 node cluster 
+so each block is desirable to have 128 mb size and so 500 mb will be spread across 4 nodes and the info like which block is stored in which node will be there 
+in Name Node which is master node and those 4 nodes which has actual data are slaves or data nodes 
+
+when ever client sent request to process this file the request goes to name node and name node would give the info which blocks are stored in which nodes 
+there by client access the actual data .....okay sounds good but as this hadoop cluster servers are commodity hardware there is a chance of data nodes going down 
+then how to tolerate the fault ...we can do that using replication factor 3 like blocks are replicated thrice and are present in 3 different machines so that if one goes down name node can use other 2 blocks present in 2 other nodes ....oh nice nice 
+but what if Name Node itself goes down ????? name node will be replaced by secondary namenode ....how does namenode understands that particular data node 
+is down??? it is by heart beat like for every 3 sec data node needs to send heart beat to name node ....if data node fails 10 consecutive times (.i.e 30 sec )
+then name node decides that data node is dead ...
+
 
