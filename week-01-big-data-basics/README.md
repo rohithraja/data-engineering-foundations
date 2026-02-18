@@ -145,4 +145,10 @@ but what if Name Node itself goes down ????? name node will be replaced by secon
 is down??? it is by heart beat like for every 3 sec data node needs to send heart beat to name node ....if data node fails 10 consecutive times (.i.e 30 sec )
 then name node decides that data node is dead ...
 
+# Role Of Data Engineer 
+Data engineer acts as a glue between operational data store and consumers (Data scientists, ML engineers, reporting , visualization , BI etc)...
+previously the data flow used to be as Multiple sources ----> ETL ---DWH but now it changed to Multiple Sources ---->ELT---->serving layer
+In hadoop in a 4 node cluster combination of all Hardisk together is HDFS and the data will be first processed within the same machine as data exist and this 
+concept of data processing happening in the same machine where data resides is known as data locality
+
 
